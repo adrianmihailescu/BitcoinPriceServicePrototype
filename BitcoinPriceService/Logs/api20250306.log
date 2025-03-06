@@ -1,0 +1,29 @@
+2025-03-06 11:32:47.923 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-03-06 11:32:48.063 +02:00 [INF] Now listening on: http://localhost:5046
+2025-03-06 11:32:48.067 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-06 11:32:48.069 +02:00 [INF] Hosting environment: Development
+2025-03-06 11:32:48.071 +02:00 [INF] Content root path: C:\PERS\Adrian\WORK\.NET\INTERVIEWS\2025\NextUp\BitcoinPriceServicePrototype\BitcoinPriceService
+2025-03-06 11:33:17.712 +02:00 [INF] Application is shutting down...
+2025-03-06 11:33:50.687 +02:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-03-06 11:33:50.835 +02:00 [INF] Now listening on: http://localhost:5046
+2025-03-06 11:33:50.841 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-06 11:33:50.843 +02:00 [INF] Hosting environment: Development
+2025-03-06 11:33:50.845 +02:00 [INF] Content root path: C:\PERS\Adrian\WORK\.NET\INTERVIEWS\2025\NextUp\BitcoinPriceServicePrototype\BitcoinPriceService
+2025-03-06 11:34:42.703 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/price/2018-03-02T01:23:58Z - null null
+2025-03-06 11:34:42.780 +02:00 [INF] Incoming Request: GET /api/price/2018-03-02T01:23:58Z at "2025-03-06T09:34:42.7795377Z"
+2025-03-06 11:34:42.808 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-03-06 11:34:42.828 +02:00 [INF] Executing endpoint 'HTTP: GET /api/price/{timestamp}'
+2025-03-06 11:34:42.848 +02:00 [INF] Fetching Bitcoin price for timestamp: "2018-03-02T01:23:58.0000000Z"
+2025-03-06 11:34:43.211 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__ToUniversalTime_0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."AggregatedPrice", "b"."Timestamp"
+FROM "BitcoinPrices" AS "b"
+WHERE "b"."Timestamp" = @__ToUniversalTime_0
+LIMIT 1
+2025-03-06 11:34:43.265 +02:00 [INF] Returning price: 91202 for timestamp "2018-03-02T01:23:58.0000000Z"
+2025-03-06 11:34:43.286 +02:00 [INF] Setting HTTP status code 200.
+2025-03-06 11:34:43.303 +02:00 [INF] Writing value of type 'Nullable`1' as Json.
+2025-03-06 11:34:43.314 +02:00 [INF] Executed endpoint 'HTTP: GET /api/price/{timestamp}'
+2025-03-06 11:34:43.317 +02:00 [INF] Response: GET /api/price/2018-03-02T01:23:58Z - Status: 200 at "2025-03-06T09:34:43.3167831Z"
+2025-03-06 11:34:43.327 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/price/2018-03-02T01:23:58Z - 200 null application/json; charset=utf-8 686.0123ms

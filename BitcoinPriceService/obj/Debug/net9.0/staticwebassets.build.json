@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "84BPgko+9JaNUlxLQLH2Mm6Io2rL4mNTe9duS5Ol7Ys=",
+  "Source": "BitcoinPriceService",
+  "BasePath": "_content/BitcoinPriceService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
